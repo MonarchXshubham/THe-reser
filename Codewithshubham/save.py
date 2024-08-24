@@ -1,5 +1,5 @@
 
-from plugins.forcesub import ForceSub
+from Codewithshubham.forcesub import ForceSub
 import asyncio 
 import pyrogram
 from pyrogram import Client, filters
