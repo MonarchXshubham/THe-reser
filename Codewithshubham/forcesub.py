@@ -2,7 +2,7 @@
 
 
 import asyncio
-from config import config
+from config import *
 import pyrogram
 from pyrogram import Client,filters, enums
 from pyrogram.errors import FloodWait, UserNotParticipant
