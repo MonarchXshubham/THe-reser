@@ -1,7 +1,5 @@
 import os
 
-class Config:
-  
 #Bot token @Botfather
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "7326845018:AAHza6o1ZNjAcpfDMgB4IQT_-JOFfAZf7wY")
 
@@ -14,5 +12,6 @@ API_HASH = os.environ.get("API_HASH", "4022d5686b9b7a7cf8891205921a0ab3")
 #Database 
 DB_URI = os.environ.get("DB_URI", "mongodb+srv://madarazbotz:riVNFzoBGQlnkmEA@cluster0.4nx2vpf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
+class Config:
 #fsub
 UPDATES_CHANNEL = "-1002235661888"
