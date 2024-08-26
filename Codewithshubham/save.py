@@ -1,5 +1,4 @@
 
-from Codewithshubham.forcesub import ForceSub
 import asyncio 
 import pyrogram
 from pyrogram import Client, filters
