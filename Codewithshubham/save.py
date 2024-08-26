@@ -1,4 +1,5 @@
 
+from Codewithshubham.forcesub import ForceSub
 import asyncio 
 import pyrogram
 from pyrogram import Client, filters
@@ -62,6 +63,12 @@ def progress(current, total, message, type):
 # start command
 @Client.on_message(filters.command(["start"]))
 async def send_start(client: Client, message: Message):
+   
+    # Check for force subscription
+    Fsub = await ForceSub(client, message)
+    if Fsub == 400:
+        return
+
     buttons = [[
         InlineKeyboardButton("• ᴅᴇᴠᴇʟᴏᴘᴇʀ •", url = "https://t.me/Shubham_X_Official")
     ],[
